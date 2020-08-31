@@ -1,4 +1,4 @@
-# MY-OJ-Girlfriend-can-t-be-so-cute
+# MY OJ Girlfriend Cannot Be So Cute
 
 这是一个实现Online Judgement系统
 
