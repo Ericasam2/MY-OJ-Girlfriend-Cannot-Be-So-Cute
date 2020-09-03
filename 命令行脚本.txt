@@ -1,0 +1,19 @@
+需要使用到命令行的涉及到一下几种情况：
+
+  1、需要连接数据库的情况：
+    1）通过数据库得到角色排名
+    2）通过数据库获取题目
+    3）通过数据库判断回答是否正确，并且进行好感度的修改
+    4）创建和删除表
+
+对于以上几种需要使用数据库的情况，需要单独跑py文件
+1）get_rank()：
+  没有输入，直接在数据库中根据两个角色的好感值进行修改rank，并且返回两个角色rank的txt文件
+  
+2）raise_question():
+  没有输入，目前raise_question函数将写成raise_xx_question()，返回的是Qid，以及题干和选项的txt文件
+  
+3）answer_question(str Qid, str my_answer, str character):
+  这里有三个输入，需要从Ren'py 中获取my_answer,character, 以及从raise_question中获取Qid信息，
+  那么这三个参数需要从os的命令行中导入
+  
